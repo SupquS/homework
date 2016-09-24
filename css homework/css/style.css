@@ -40,34 +40,29 @@ a:hover {
     padding: 1px;
 }
 
-.header,
-.footer,
-.navigation {
-    margin: 20px;
-    padding: 10px;
-}
-
-.container{
-    background: #fff;
-}
-
-.content {
+section {
     padding: 20px;
 }
 
 .header {
     height: 50px;
     text-align: right;
+    padding-right: 10px;
     font-style: italic;
     background: #bcbe97;
 }
 
-.navigation {
+nav {
     border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
 }
 
-.footer {
+nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+footer {
     height: 40px;
     text-align: center;
     background: #f2f2f2;
