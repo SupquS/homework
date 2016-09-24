@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1,h2,h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 220%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e62222;
+    content: " ";
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 110%;
+    font-weight: 800;
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Header */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(img/opera-odessa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+.header-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    float: left;
+    height: 167px;
+    width: auto;
+    margin-top: 20px;
+}
+
+/* Navigation */
+
+nav li:first-child {
+    margin-left: 15%;
+}
+
+nav li{
+    margin-top: 40px;
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    font-size: 90%;
+}
+
+nav a:link,
+nav a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+nav a:hover,
+nav a:active {
+    border-bottom: 2px solid red;
+}
+
+/* ABOUT ME */
+
+.about-me {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+/* Skills */
+
+.skills {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skills a:link,
+.skills a:visited {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+}
+
+.skills a:hover,
+.skills a:active {
+    font-size: 93%;
+    color: crimson;
+    border-bottom: 2px solid darkgreen;
+    transition: font-size 2.0s;
+}
+
+.skill1,
+.skill2,
+.skill3,
+.skill4 {
+    float: left;
+    width: 24%;
+    text-align: justify;
+    margin: 20px 0.45%;
+    padding: 0.05%;
+}
+
+.skills p {
+    font-size: 90%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+    padding-left: 3px;
+}
+
+.skill1 p {
+    border-left: 1px solid orange;
+}
+.skill2 p {
+    border-left: 1px solid skyblue;
+}
+.skill3 p {
+    border-left: 1px solid yellow;
+}
+.skill4 p {
+    border-left: 1px solid mediumpurple;
+}
+
+h3.skill {
+    border-radius: 3px; 
+}
+
+h3.html { background-color: orange; }
+h3.css { background-color: skyblue; }
+h3.js { background-color: yellow; }
+h3.php { background-color: mediumpurple; }
+
+/* Spans */
+.del {
+    text-decoration: line-through;
+    color: #a5a1a1;
+}
+
+
+/* Contacts */
+
+.contact-form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 99%;
+    padding: 7px 0;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+textarea { height: 100px; }
+
+input[type=submit] {
+    width: 99%;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+input[type=submit]:hover {
+    background: #e62222;
+    color: #fff;
+    border-radius: 3px;
+    transition-delay: 0.2s;
+}
+
+label { font-weight: bold; }
+
+/* Footer */
+
+.name,
+.email,
+.message {
+    margin-bottom: 15px
+}
+
+footer {
+    background-color: dimgray;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 90%;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer a:link,
+footer a:visited {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+footer a:hover,
+footer a:active {
+    border-bottom: 2px solid red;
+}
+
+.social-links li {
+    float: right;
+    list-style: none;
+    padding-left: 0.5%;
+    padding-top: 20px;
+    margin-right: 1%;
+}
+
+.social-links li:first-child {
+    margin-right: 10%;
+}
+
+.menu-bottom li {
+    float: left;
+    list-style: none;
+    padding-right: 10px;
+    padding-top: 20px;
+    margin-left: 1%;
+}
+
+.menu-bottom li:first-child {
+    margin-left: 10%;
+}
+
+.menu-bottom li a,
+.social-links li a {
+    color: #fff;
+    font-size: 80%;
+    text-decoration: none;
+}
+
+img.fb {
+}
+
+
+
+
+
+
+

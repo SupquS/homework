@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1200px) {
+    
+    .header-text-box {
+        width: 100%;
+        padding: 0 2%;
+        text-align: center;
+    }
+    
+    .row { padding: 0 2%; }
+    
+}
+
+@media only screen and (max-width: 1023px) {
+    
+    body { font-size: 18px;}
+    
+    header {
+        height: 50vh;
+    }
+    
+    .header-text-box {
+        top: 30%;
+        left: -2%;
+        -webkit-transform: none;
+        transform: none;
+    }
+    
+    .about-me {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .skills {
+        width: 100%;
+        margin: 0 auto;
+    }
+     
+    .contact-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    
+    body { font-size: 16px;}
+    
+    header {
+        height: 40vh;
+    }
+    
+    .header-text-box {
+        top: 20%;
+        left: -4%;
+        -webkit-transform: none;
+        transform: none;
+    }
+    
+    .row,
+    .header-text-box { padding: 0 4%; }
+    
+    nav li{
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    
+    .contact-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .skill1,
+    .skill2,
+    .skill3,
+    .skill4 {
+        width: 100%;
+        margin: 5px 0.45%;
+    }
+    
+    h3 {
+        font-size: 100%;
+        margin: 10px 0;
+    }
+    
+    .skills p {
+        width: 98%;
+        margin: 0 auto;
+        padding-left: 5px;
+        margin-left: -1px;
+    }
+    
+    p.lb-red {
+        border-left: 2px solid crimson;
+        padding-left: 5px;
+        margin-left: 2px;
+    }
+    
+    .skill1 p { border-left: 2px solid orange; }
+    .skill2 p { border-left: 2px solid skyblue; }
+    .skill3 p { border-left: 2px solid yellow; }
+    .skill4 p { border-left: 2px solid mediumpurple; }
+}

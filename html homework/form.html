@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Web Page - Exercise.</title>
+</head>
+<body>
+   <h1>Sign Up Form</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+       <table border="0" cellpadding="5">
+            <tr>
+                <td><label for="login">Name:</label></td>
+                <td><input type="text" name="login" id="login" placeholder="Enter your name"></td>
+           </tr>
+           <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" placeholder="Enter your email"></td>
+           </tr>
+               <tr>
+                <td><label for="email">Gender:</label></td>
+                <td>
+                <input type="radio" name="gender" value="Male"> Male<br>
+                <input type="radio" name="gender" value="Female"> Female
+                </td>
+           </tr>
+           <tr>
+               <td>Location</td>
+               <td>
+                   <select name="country">
+                        <option selected value="0">Select your country</option>
+                        <option value="ua">Ukraine</option>
+                        <option value="de">Germany</option>
+                        <option value="usa">USA</option>
+	                </select>
+                   
+               </td>
+           </tr>
+           <tr>
+                <td><label for="tel">Phone:</label></td>
+                <td><input type="tel" name="tel" id="tel" placeholder="Enter you phone number"></td>
+           </tr>
+           <tr>
+               <td>Application For:</td>
+               <td>
+                   Registration <input type="checkbox" name="app_for_reg"><br>
+                   Subscription <input type="checkbox" name="app_for_subscr"><br>
+                   Support <input type="checkbox" name="app_for_support"> 
+               </td>
+           </tr>
+            <tr>
+               <td>Upload Resume:</td>
+               <td>
+                   <input type="file" name="upload_file">
+               </td>
+           </tr>
+           <tr>
+                <td colspan="2">Message:</td>
+           </tr>
+           <tr>
+               <td colspan="2"><textarea name="about" id="about" placeholder="Write About Yourself"></textarea></td>
+           </tr>
+           <tr>
+               <td colspan="2"><input type="submit" value="Register"></td>
+           </tr>
+       </table>
+           <input type="hidden" name="date" value="20.09.2016">
+    </form>
+</body>
+</html>
