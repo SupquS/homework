@@ -1,1 +1,7 @@
 Help notes to make development easy
+To create this webpage I use:
+- Brackets editor;
+- Google search to find images;
+- Small monitor;
+
+Hope you'll enjoy.
