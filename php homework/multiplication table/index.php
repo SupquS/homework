@@ -25,14 +25,12 @@
         <th>9 Times Table</th>
     </tr>
     <?php
-    for($b = 1; $b <= 9; $b++){
-        $a = 2;
-        $c = $a * $b;
-        echo "<tr><td>"."$a * $b = $c"."</td>";
-        for($a = 3; $a <= 9; $a++){
-            $c = $a * $b;
-            echo "<td>"."$a * $b = $c"."</td>";
+    for($b = 1; $b < 10; $b++){
+        echo "<tr>\r\n";
+			for($a = 2; $a < 10; $a++){
+				echo "<td>$a * $b = ".$a * $b."</td>\r\n";
         }
+		echo "</tr>\r\n";
     }
     ?>
     </tbody>
