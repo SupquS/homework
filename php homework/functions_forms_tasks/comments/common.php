@@ -117,3 +117,32 @@ function loadBadWords()
     });
     return array_filter($words);
 }
+
+/**
+*  Returns prepared output for index.php.
+*
+* @return string
+*/
+
+function commentsRender()
+{
+    $comments = getComments();
+if (!empty($comments)) {
+    echo '<ol>';
+    foreach ($comments as &$entry) :
+?>
+    <li>
+        <?= $entry['date'] ?>&nbsp;/&nbsp; 
+        <?= prepareOutput($entry['username']) ?>&nbsp;/&nbsp; 
+        <?= prepareOutput($entry['email']) ?><br>
+        <?= prepareOutput($entry['body']) ?><br>
+        <br>
+    </li>
+<?php
+    endforeach;
+    unset($entry);
+    echo '</ol>';
+} else {
+    echo "<h3>No comments have been added yet.</h3>";
+}
+}
